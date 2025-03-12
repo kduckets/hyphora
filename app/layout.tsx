@@ -8,8 +8,8 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "Hyphora | Digital Experiences for Those Making a Difference",
-  description: "Web agency specializing in websites for nonprofit, environmental, and music industry companies.",
+  title: "Hyphora Solutions | Empowering Impact-Driven Organizations",
+  description: "Technology, engagement, and growth solutions for impact-driven organizations.",
     generator: 'v0.dev'
 }
 

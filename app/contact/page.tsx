@@ -55,9 +55,13 @@ export default function ContactPage() {
       <section className="py-20 bg-green-50 dark:bg-green-950/20">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center text-center">
-            <h1 className="text-4xl md:text-5xl font-bold tracking-tighter mb-4">Get in Touch</h1>
+            <h1 className="text-4xl md:text-5xl font-bold tracking-tighter mb-4">
+              Contact Us: Let's Start a Conversation
+            </h1>
             <p className="text-xl text-muted-foreground max-w-[700px]">
-              We'd love to hear about your project and how we can help bring your vision to life.
+              We're excited to learn more about your mission and discuss how Hyphora Solutions can help you achieve your
+              goals. Please use the form below to get in touch, or feel free to reach out to us directly using the
+              contact information provided.
             </p>
           </div>
         </div>
@@ -71,11 +75,18 @@ export default function ContactPage() {
               <CardContent className="p-6">
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="space-y-2">
-                    <Label htmlFor="name">Name</Label>
-                    <Input id="name" name="name" value={formData.name} onChange={handleChange} required />
+                    <Label htmlFor="name">Your Name</Label>
+                    <Input
+                      id="name"
+                      name="name"
+                      value={formData.name}
+                      onChange={handleChange}
+                      required
+                      placeholder="Jane Smith"
+                    />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="email">Email</Label>
+                    <Label htmlFor="email">Email Address</Label>
                     <Input
                       id="email"
                       name="email"
@@ -83,19 +94,21 @@ export default function ContactPage() {
                       value={formData.email}
                       onChange={handleChange}
                       required
+                      placeholder="jane@example.org"
                     />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="organization">Organization</Label>
+                    <Label htmlFor="organization">Organization Name</Label>
                     <Input
                       id="organization"
                       name="organization"
                       value={formData.organization}
                       onChange={handleChange}
+                      placeholder="Your Organization"
                     />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="message">Message</Label>
+                    <Label htmlFor="message">How Can We Help?</Label>
                     <Textarea
                       id="message"
                       name="message"
@@ -103,7 +116,18 @@ export default function ContactPage() {
                       onChange={handleChange}
                       rows={5}
                       required
+                      placeholder="Tell us about your project or goals..."
                     />
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <input
+                      type="checkbox"
+                      id="marketing-opt-in"
+                      className="h-4 w-4 rounded border-gray-300 text-green-600 focus:ring-green-500"
+                    />
+                    <Label htmlFor="marketing-opt-in" className="text-sm">
+                      I'd like to receive occasional updates and insights from Hyphora Solutions
+                    </Label>
                   </div>
                   <Button
                     type="submit"
@@ -127,7 +151,7 @@ export default function ContactPage() {
                     <MapPin className="h-5 w-5 mr-3 text-green-600 dark:text-green-400 mt-0.5" />
                     <div>
                       <h3 className="font-medium">Address</h3>
-                      <p className="text-muted-foreground">123 Eco Street, Portland, OR 97201</p>
+                      <p className="text-muted-foreground">123 Impact Street, Portland, OR 97201</p>
                     </div>
                   </div>
                   <div className="flex items-start">
@@ -162,13 +186,13 @@ export default function ContactPage() {
               </div>
 
               <div className="bg-green-50 dark:bg-green-950/30 p-6 rounded-lg">
-                <h2 className="text-2xl font-bold mb-4">Let's Connect</h2>
+                <h2 className="text-2xl font-bold mb-4">Let's Discuss Your Impact Goals</h2>
                 <p className="text-muted-foreground mb-4">
                   We're always interested in hearing about new projects and potential collaborations.
                 </p>
                 <p className="text-muted-foreground">
                   Whether you have a specific project in mind or just want to learn more about our services, we'd love
-                  to chat.
+                  to chat about how we can help your organization achieve its impact goals.
                 </p>
               </div>
             </div>
@@ -187,8 +211,8 @@ export default function ContactPage() {
             {/* This would be replaced with an actual map component in a real implementation */}
             <div className="w-full h-full bg-[url('/placeholder.svg?height=600&width=1200')] bg-cover bg-center flex items-center justify-center">
               <div className="bg-white dark:bg-black p-4 rounded-lg shadow-lg">
-                <p className="font-bold">Hyphora</p>
-                <p className="text-sm text-muted-foreground">123 Eco Street, Portland, OR 97201</p>
+                <p className="font-bold">Hyphora Solutions</p>
+                <p className="text-sm text-muted-foreground">123 Impact Street, Portland, OR 97201</p>
               </div>
             </div>
           </div>

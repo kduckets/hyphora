@@ -35,7 +35,7 @@ export default function Navbar() {
         <div className="flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center space-x-2">
             <Leaf className="h-6 w-6 text-green-600 dark:text-green-400" />
-            <span className="font-bold text-xl">Hyphora</span>
+            <span className="font-bold text-xl">Hyphora Solutions</span>
           </Link>
 
           <nav className="hidden md:flex items-center space-x-6">
@@ -55,7 +55,7 @@ export default function Navbar() {
               href="/work"
               className="text-sm font-medium hover:text-green-600 dark:hover:text-green-400 transition-colors"
             >
-              Our Work
+              Our Impact
             </Link>
             <Link
               href="/blog"
@@ -83,7 +83,7 @@ export default function Navbar() {
               <span className="sr-only">Toggle theme</span>
             </Button>
 
-            <Button className="hidden md:inline-flex bg-green-600 hover:bg-green-700 text-white">Get in Touch</Button>
+            <Button className="hidden md:inline-flex bg-green-600 hover:bg-green-700 text-white">Let's Connect</Button>
 
             <Sheet>
               <SheetTrigger asChild>
@@ -97,7 +97,7 @@ export default function Navbar() {
                   <div className="flex items-center justify-between mb-8">
                     <Link href="/" className="flex items-center space-x-2">
                       <Leaf className="h-6 w-6 text-green-600 dark:text-green-400" />
-                      <span className="font-bold text-xl">Hyphora</span>
+                      <span className="font-bold text-xl">Hyphora Solutions</span>
                     </Link>
                   </div>
                   <nav className="flex flex-col space-y-6 flex-1">
@@ -117,7 +117,7 @@ export default function Navbar() {
                       href="/work"
                       className="text-lg font-medium hover:text-green-600 dark:hover:text-green-400 transition-colors"
                     >
-                      Our Work
+                      Our Impact
                     </Link>
                     <Link
                       href="/blog"
@@ -132,7 +132,7 @@ export default function Navbar() {
                       Contact
                     </Link>
                   </nav>
-                  <Button className="mt-auto bg-green-600 hover:bg-green-700 text-white">Get in Touch</Button>
+                  <Button className="mt-auto bg-green-600 hover:bg-green-700 text-white">Let's Connect</Button>
                 </div>
               </SheetContent>
             </Sheet>

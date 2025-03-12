@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { ArrowRight, Leaf, Heart, Music, Globe, Code, BarChart } from "lucide-react"
+import { ArrowRight, Zap, Palette, BarChart } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 
@@ -11,9 +11,13 @@ export default function ServicesPage() {
         <div className="container px-4 md:px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h1 className="text-4xl md:text-5xl font-bold tracking-tighter mb-4">Our Services</h1>
+              <h1 className="text-4xl md:text-5xl font-bold tracking-tighter mb-4">
+                Our Services: Digital Solutions for Impactful Growth
+              </h1>
               <p className="text-xl text-muted-foreground mb-8">
-                Tailored digital solutions for organizations making a positive impact on our world.
+                Hyphora Solutions offers a comprehensive suite of digital services designed to empower organizations
+                that are making a difference. We combine creativity, technology, and strategy to deliver impactful
+                solutions that help you achieve your mission and grow your impact.
               </p>
               <Button className="bg-green-600 hover:bg-green-700 text-white">
                 Get in Touch <ArrowRight className="ml-2 h-4 w-4" />
@@ -36,163 +40,109 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Services Overview */}
+      {/* Web Design & Development */}
       <section className="py-20 bg-white dark:bg-black">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tighter mb-4">What We Offer</h2>
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tighter mb-4">Web Design & Development</h2>
             <div className="w-20 h-1 bg-green-600 mb-8"></div>
             <p className="text-xl text-muted-foreground max-w-[800px]">
-              Comprehensive digital solutions tailored to your organization's unique needs
+              Beautiful, functional websites that engage your audience and amplify your message
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-green-50 dark:bg-green-950/30 p-8 rounded-lg">
-              <div className="h-12 w-12 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center mb-4">
-                <Code className="h-6 w-6 text-green-600 dark:text-green-400" />
-              </div>
-              <h3 className="text-xl font-bold mb-2">Website Design & Development</h3>
-              <p className="text-muted-foreground mb-4">
-                Beautiful, functional websites that tell your story and connect with your audience.
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+              <p className="text-lg text-muted-foreground mb-6">
+                Your website is often the first point of contact between your organization and your audience. We create
+                custom websites that not only look beautiful but also drive meaningful engagement and action.
               </p>
-              <ul className="space-y-2 mb-6">
+              <ul className="space-y-4 mb-6">
                 <li className="flex items-start">
                   <ArrowRight className="h-4 w-4 text-green-600 dark:text-green-400 mt-1 mr-2" />
-                  <span className="text-sm">Responsive design for all devices</span>
+                  <span>Responsive design for all devices</span>
                 </li>
                 <li className="flex items-start">
                   <ArrowRight className="h-4 w-4 text-green-600 dark:text-green-400 mt-1 mr-2" />
-                  <span className="text-sm">Accessibility-first approach</span>
+                  <span>Accessibility-first approach</span>
                 </li>
                 <li className="flex items-start">
                   <ArrowRight className="h-4 w-4 text-green-600 dark:text-green-400 mt-1 mr-2" />
-                  <span className="text-sm">Content management systems</span>
+                  <span>Content management systems</span>
+                </li>
+                <li className="flex items-start">
+                  <ArrowRight className="h-4 w-4 text-green-600 dark:text-green-400 mt-1 mr-2" />
+                  <span>User-centered design</span>
+                </li>
+                <li className="flex items-start">
+                  <ArrowRight className="h-4 w-4 text-green-600 dark:text-green-400 mt-1 mr-2" />
+                  <span>Search engine optimization</span>
                 </li>
               </ul>
-              <Button variant="outline" className="w-full">
-                Learn More
-              </Button>
+              <Button className="bg-green-600 hover:bg-green-700 text-white">View Web Projects</Button>
             </div>
-            <div className="bg-green-50 dark:bg-green-950/30 p-8 rounded-lg">
-              <div className="h-12 w-12 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center mb-4">
-                <Globe className="h-6 w-6 text-green-600 dark:text-green-400" />
+            <div className="relative">
+              <div className="aspect-[4/3] w-full overflow-hidden rounded-lg bg-muted">
+                <Image
+                  src="/placeholder.svg?height=600&width=800"
+                  alt="Web Design & Development"
+                  width={800}
+                  height={600}
+                  className="object-cover"
+                />
               </div>
-              <h3 className="text-xl font-bold mb-2">Digital Strategy</h3>
-              <p className="text-muted-foreground mb-4">
-                Strategic planning to maximize your online impact and reach your goals.
-              </p>
-              <ul className="space-y-2 mb-6">
-                <li className="flex items-start">
-                  <ArrowRight className="h-4 w-4 text-green-600 dark:text-green-400 mt-1 mr-2" />
-                  <span className="text-sm">Audience research and analysis</span>
-                </li>
-                <li className="flex items-start">
-                  <ArrowRight className="h-4 w-4 text-green-600 dark:text-green-400 mt-1 mr-2" />
-                  <span className="text-sm">Content strategy</span>
-                </li>
-                <li className="flex items-start">
-                  <ArrowRight className="h-4 w-4 text-green-600 dark:text-green-400 mt-1 mr-2" />
-                  <span className="text-sm">Digital ecosystem planning</span>
-                </li>
-              </ul>
-              <Button variant="outline" className="w-full">
-                Learn More
-              </Button>
-            </div>
-            <div className="bg-green-50 dark:bg-green-950/30 p-8 rounded-lg">
-              <div className="h-12 w-12 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center mb-4">
-                <BarChart className="h-6 w-6 text-green-600 dark:text-green-400" />
-              </div>
-              <h3 className="text-xl font-bold mb-2">Digital Marketing</h3>
-              <p className="text-muted-foreground mb-4">
-                Targeted campaigns that amplify your message and drive meaningful engagement.
-              </p>
-              <ul className="space-y-2 mb-6">
-                <li className="flex items-start">
-                  <ArrowRight className="h-4 w-4 text-green-600 dark:text-green-400 mt-1 mr-2" />
-                  <span className="text-sm">Social media strategy</span>
-                </li>
-                <li className="flex items-start">
-                  <ArrowRight className="h-4 w-4 text-green-600 dark:text-green-400 mt-1 mr-2" />
-                  <span className="text-sm">Email marketing</span>
-                </li>
-                <li className="flex items-start">
-                  <ArrowRight className="h-4 w-4 text-green-600 dark:text-green-400 mt-1 mr-2" />
-                  <span className="text-sm">SEO and content marketing</span>
-                </li>
-              </ul>
-              <Button variant="outline" className="w-full">
-                Learn More
-              </Button>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Industries We Serve */}
+      {/* CRM Implementations & Integrations */}
       <section className="py-20 bg-green-50 dark:bg-green-950/20">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tighter mb-4">Industries We Serve</h2>
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tighter mb-4">CRM Implementations & Integrations</h2>
             <div className="w-20 h-1 bg-green-600 mb-8"></div>
             <p className="text-xl text-muted-foreground max-w-[800px]">
-              Specialized expertise for organizations making a positive impact
+              Streamlining and consolidating your tools and processes for maximum efficiency
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-            <div className="flex flex-col items-center text-center">
-              <div className="h-16 w-16 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center mb-4">
-                <Leaf className="h-8 w-8 text-green-600 dark:text-green-400" />
-              </div>
-              <h3 className="text-2xl font-bold mb-4">Environmental Organizations</h3>
-              <p className="text-muted-foreground mb-6">
-                Digital solutions for conservation groups, climate action organizations, sustainable businesses, and
-                other environmental advocates.
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div className="order-2 md:order-1">
+              <p className="text-lg text-muted-foreground mb-6">
+                Effective relationship management is crucial for impact-driven organizations. We help you implement and
+                optimize CRM systems that streamline your operations and enhance your relationships with supporters,
+                donors, and community members.
               </p>
-              <div className="aspect-video w-full overflow-hidden rounded-lg bg-muted">
-                <Image
-                  src="/placeholder.svg?height=450&width=800"
-                  alt="Environmental project"
-                  width={800}
-                  height={450}
-                  className="object-cover"
-                />
-              </div>
+              <ul className="space-y-4 mb-6">
+                <li className="flex items-start">
+                  <ArrowRight className="h-4 w-4 text-green-600 dark:text-green-400 mt-1 mr-2" />
+                  <span>System selection and setup</span>
+                </li>
+                <li className="flex items-start">
+                  <ArrowRight className="h-4 w-4 text-green-600 dark:text-green-400 mt-1 mr-2" />
+                  <span>Data migration and integration</span>
+                </li>
+                <li className="flex items-start">
+                  <ArrowRight className="h-4 w-4 text-green-600 dark:text-green-400 mt-1 mr-2" />
+                  <span>Custom workflow development</span>
+                </li>
+                <li className="flex items-start">
+                  <ArrowRight className="h-4 w-4 text-green-600 dark:text-green-400 mt-1 mr-2" />
+                  <span>Training and ongoing support</span>
+                </li>
+                <li className="flex items-start">
+                  <ArrowRight className="h-4 w-4 text-green-600 dark:text-green-400 mt-1 mr-2" />
+                  <span>Integration with other tools and platforms</span>
+                </li>
+              </ul>
+              <Button className="bg-green-600 hover:bg-green-700 text-white">Learn More</Button>
             </div>
-            <div className="flex flex-col items-center text-center">
-              <div className="h-16 w-16 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center mb-4">
-                <Heart className="h-8 w-8 text-green-600 dark:text-green-400" />
-              </div>
-              <h3 className="text-2xl font-bold mb-4">Nonprofit Organizations</h3>
-              <p className="text-muted-foreground mb-6">
-                Impactful digital experiences for charities, foundations, community organizations, and social
-                enterprises.
-              </p>
-              <div className="aspect-video w-full overflow-hidden rounded-lg bg-muted">
+            <div className="order-1 md:order-2">
+              <div className="aspect-[4/3] w-full overflow-hidden rounded-lg bg-muted">
                 <Image
-                  src="/placeholder.svg?height=450&width=800"
-                  alt="Nonprofit project"
+                  src="/placeholder.svg?height=600&width=800"
+                  alt="CRM Implementations"
                   width={800}
-                  height={450}
-                  className="object-cover"
-                />
-              </div>
-            </div>
-            <div className="flex flex-col items-center text-center">
-              <div className="h-16 w-16 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center mb-4">
-                <Music className="h-8 w-8 text-green-600 dark:text-green-400" />
-              </div>
-              <h3 className="text-2xl font-bold mb-4">Music Industry</h3>
-              <p className="text-muted-foreground mb-6">
-                Creative digital solutions for independent artists, labels, music collectives, and music-focused
-                businesses.
-              </p>
-              <div className="aspect-video w-full overflow-hidden rounded-lg bg-muted">
-                <Image
-                  src="/placeholder.svg?height=450&width=800"
-                  alt="Music industry project"
-                  width={800}
-                  height={450}
+                  height={600}
                   className="object-cover"
                 />
               </div>
@@ -201,7 +151,156 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Process */}
+      {/* Email Marketing & Communications */}
+      <section className="py-20 bg-white dark:bg-black">
+        <div className="container px-4 md:px-6">
+          <div className="flex flex-col items-center text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tighter mb-4">Email Marketing & Communications</h2>
+            <div className="w-20 h-1 bg-green-600 mb-8"></div>
+            <p className="text-xl text-muted-foreground max-w-[800px]">
+              Building lasting relationships through personalized communications and content
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+              <p className="text-lg text-muted-foreground mb-6">
+                Email remains one of the most effective channels for engaging with your audience. We help you develop
+                and implement email marketing strategies that build relationships, drive action, and advance your
+                mission.
+              </p>
+              <ul className="space-y-4 mb-6">
+                <li className="flex items-start">
+                  <ArrowRight className="h-4 w-4 text-green-600 dark:text-green-400 mt-1 mr-2" />
+                  <span>Campaign strategy and planning</span>
+                </li>
+                <li className="flex items-start">
+                  <ArrowRight className="h-4 w-4 text-green-600 dark:text-green-400 mt-1 mr-2" />
+                  <span>Email template design</span>
+                </li>
+                <li className="flex items-start">
+                  <ArrowRight className="h-4 w-4 text-green-600 dark:text-green-400 mt-1 mr-2" />
+                  <span>Content creation and copywriting</span>
+                </li>
+                <li className="flex items-start">
+                  <ArrowRight className="h-4 w-4 text-green-600 dark:text-green-400 mt-1 mr-2" />
+                  <span>Automation and personalization</span>
+                </li>
+                <li className="flex items-start">
+                  <ArrowRight className="h-4 w-4 text-green-600 dark:text-green-400 mt-1 mr-2" />
+                  <span>Performance analysis and optimization</span>
+                </li>
+              </ul>
+              <Button className="bg-green-600 hover:bg-green-700 text-white">See Our Approach</Button>
+            </div>
+            <div className="relative">
+              <div className="aspect-[4/3] w-full overflow-hidden rounded-lg bg-muted">
+                <Image
+                  src="/placeholder.svg?height=600&width=800"
+                  alt="Email Marketing"
+                  width={800}
+                  height={600}
+                  className="object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Additional Services */}
+      <section className="py-20 bg-green-50 dark:bg-green-950/20">
+        <div className="container px-4 md:px-6">
+          <div className="flex flex-col items-center text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tighter mb-4">Additional Services</h2>
+            <div className="w-20 h-1 bg-green-600 mb-8"></div>
+            <p className="text-xl text-muted-foreground max-w-[800px]">
+              Comprehensive solutions to support your organization's digital needs
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-white dark:bg-green-950/30 p-8 rounded-lg">
+              <div className="h-12 w-12 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center mb-4">
+                <Zap className="h-6 w-6 text-green-600 dark:text-green-400" />
+              </div>
+              <h3 className="text-xl font-bold mb-2">Sales & Marketing Automation</h3>
+              <p className="text-muted-foreground mb-4">
+                Automate your outreach, engagement, and analysis efforts for greater efficiency and impact.
+              </p>
+              <ul className="space-y-2 mb-6">
+                <li className="flex items-start">
+                  <ArrowRight className="h-4 w-4 text-green-600 dark:text-green-400 mt-1 mr-2" />
+                  <span className="text-sm">Workflow automation</span>
+                </li>
+                <li className="flex items-start">
+                  <ArrowRight className="h-4 w-4 text-green-600 dark:text-green-400 mt-1 mr-2" />
+                  <span className="text-sm">Lead nurturing sequences</span>
+                </li>
+                <li className="flex items-start">
+                  <ArrowRight className="h-4 w-4 text-green-600 dark:text-green-400 mt-1 mr-2" />
+                  <span className="text-sm">Reporting and analytics</span>
+                </li>
+              </ul>
+              <Button variant="outline" className="w-full">
+                Learn More
+              </Button>
+            </div>
+            <div className="bg-white dark:bg-green-950/30 p-8 rounded-lg">
+              <div className="h-12 w-12 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center mb-4">
+                <Palette className="h-6 w-6 text-green-600 dark:text-green-400" />
+              </div>
+              <h3 className="text-xl font-bold mb-2">Graphic Design</h3>
+              <p className="text-muted-foreground mb-4">
+                Visually stunning assets that elevate your brand and resonate with your community.
+              </p>
+              <ul className="space-y-2 mb-6">
+                <li className="flex items-start">
+                  <ArrowRight className="h-4 w-4 text-green-600 dark:text-green-400 mt-1 mr-2" />
+                  <span className="text-sm">Brand identity and guidelines</span>
+                </li>
+                <li className="flex items-start">
+                  <ArrowRight className="h-4 w-4 text-green-600 dark:text-green-400 mt-1 mr-2" />
+                  <span className="text-sm">Marketing collateral and assets</span>
+                </li>
+                <li className="flex items-start">
+                  <ArrowRight className="h-4 w-4 text-green-600 dark:text-green-400 mt-1 mr-2" />
+                  <span className="text-sm">Digital and print design</span>
+                </li>
+              </ul>
+              <Button variant="outline" className="w-full">
+                Learn More
+              </Button>
+            </div>
+            <div className="bg-white dark:bg-green-950/30 p-8 rounded-lg">
+              <div className="h-12 w-12 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center mb-4">
+                <BarChart className="h-6 w-6 text-green-600 dark:text-green-400" />
+              </div>
+              <h3 className="text-xl font-bold mb-2">Growth & Performance Marketing</h3>
+              <p className="text-muted-foreground mb-4">
+                Optimizing your digital presence to reach the right people through the right channels.
+              </p>
+              <ul className="space-y-2 mb-6">
+                <li className="flex items-start">
+                  <ArrowRight className="h-4 w-4 text-green-600 dark:text-green-400 mt-1 mr-2" />
+                  <span className="text-sm">Digital strategy development</span>
+                </li>
+                <li className="flex items-start">
+                  <ArrowRight className="h-4 w-4 text-green-600 dark:text-green-400 mt-1 mr-2" />
+                  <span className="text-sm">Channel optimization</span>
+                </li>
+                <li className="flex items-start">
+                  <ArrowRight className="h-4 w-4 text-green-600 dark:text-green-400 mt-1 mr-2" />
+                  <span className="text-sm">Conversion rate optimization</span>
+                </li>
+              </ul>
+              <Button variant="outline" className="w-full">
+                Learn More
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Process */}
       <section className="py-20 bg-white dark:bg-black">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center text-center mb-12">
@@ -264,12 +363,13 @@ export default function ServicesPage() {
       <section className="py-20 bg-green-600 dark:bg-green-800 text-white">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center text-center">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tighter mb-4">Ready to start your project?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tighter mb-4">Ready to discuss your project?</h2>
             <p className="text-xl text-white/80 max-w-[700px] mb-8">
-              Let's create a digital experience that amplifies your mission and connects with your audience.
+              Contact us today for a free consultation to explore how we can help your organization achieve its impact
+              goals.
             </p>
             <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-green-600">
-              Get in Touch
+              Contact us today
             </Button>
           </div>
         </div>

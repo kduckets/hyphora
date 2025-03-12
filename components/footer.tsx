@@ -12,10 +12,10 @@ export default function Footer() {
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <Leaf className="h-6 w-6 text-green-400" />
-              <span className="font-bold text-xl">Hyphora</span>
+              <span className="font-bold text-xl">Hyphora Solutions</span>
             </div>
             <p className="text-green-200 dark:text-green-300">
-              Digital experiences for those making a difference in our world.
+              Empowering impact-driven organizations through technology, engagement, and growth solutions.
             </p>
             <div className="flex space-x-4">
               <Button
@@ -63,7 +63,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/work" className="text-green-200 dark:text-green-300 hover:text-white transition-colors">
-                  Our Work
+                  Our Impact
                 </Link>
               </li>
               <li>
@@ -84,7 +84,7 @@ export default function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 mr-2 text-green-400 mt-0.5" />
-                <span className="text-green-200 dark:text-green-300">123 Eco Street, Portland, OR 97201</span>
+                <span className="text-green-200 dark:text-green-300">123 Impact Street, Portland, OR 97201</span>
               </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 mr-2 text-green-400" />
@@ -100,7 +100,7 @@ export default function Footer() {
           <div>
             <h3 className="font-bold text-lg mb-4">Newsletter</h3>
             <p className="text-green-200 dark:text-green-300 mb-4">
-              Subscribe to our newsletter for updates on our work and insights.
+              Subscribe to our newsletter for insights on impact-driven marketing.
             </p>
             <div className="space-y-2">
               <Input
@@ -113,7 +113,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-green-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-green-300 text-sm">© {new Date().getFullYear()} Hyphora. All rights reserved.</p>
+          <p className="text-green-300 text-sm">© {new Date().getFullYear()} Hyphora Solutions. All rights reserved.</p>
           <div className="flex space-x-4 mt-4 md:mt-0">
             <Link href="/privacy" className="text-green-300 text-sm hover:text-white transition-colors">
               Privacy Policy

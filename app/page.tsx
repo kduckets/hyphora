@@ -13,19 +13,20 @@ export default function Home() {
         </div>
         <div className="container relative z-10 px-4 md:px-6 flex flex-col items-center text-center">
           <div className="space-y-3 mb-8">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tighter">
-              <span className="text-green-600 dark:text-green-400">Hyphora</span>
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tighter">
+              <span className="text-green-600 dark:text-green-400">Cultivating Impact:</span> Digital Solutions for a
+              Better World
             </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground max-w-[700px] mx-auto">
-              Digital experiences for those making a difference
+            <p className="text-xl md:text-2xl text-muted-foreground max-w-[800px] mx-auto">
+              We believe in fostering meaningful connections and driving impactful growth.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 mt-6">
             <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white">
-              Our Work <ArrowRight className="ml-2 h-4 w-4" />
+              See Our Impact <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
             <Button size="lg" variant="outline">
-              Get in Touch
+              Start Your Project
             </Button>
           </div>
         </div>
@@ -40,9 +41,11 @@ export default function Home() {
       <section className="py-20 bg-white dark:bg-black">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tighter mb-4">We build digital experiences for</h2>
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tighter mb-4">
+              Empowering Change-Makers: Digital Solutions for Impact
+            </h2>
             <p className="text-xl text-muted-foreground max-w-[700px]">
-              Organizations that are making a positive impact on our world
+              We offer a comprehensive suite of services designed to empower impact-driven organizations
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -52,7 +55,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-bold mb-2">Environmental Organizations</h3>
               <p className="text-center text-muted-foreground">
-                Websites that inspire action and showcase the important work of environmental advocates.
+                High-impact websites that drive action for environmental causes.
               </p>
             </div>
             <div className="flex flex-col items-center p-6 bg-green-50 dark:bg-green-950/30 rounded-lg">
@@ -61,16 +64,16 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-bold mb-2">Nonprofit Organizations</h3>
               <p className="text-center text-muted-foreground">
-                Digital platforms that amplify your mission and connect you with supporters.
+                Engaging digital platforms that amplify your mission and build stronger communities.
               </p>
             </div>
             <div className="flex flex-col items-center p-6 bg-green-50 dark:bg-green-950/30 rounded-lg">
               <div className="h-12 w-12 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center mb-4">
                 <Music className="h-6 w-6 text-green-600 dark:text-green-400" />
               </div>
-              <h3 className="text-xl font-bold mb-2">Music Industry</h3>
+              <h3 className="text-xl font-bold mb-2">Creative & Cultural Organizations</h3>
               <p className="text-center text-muted-foreground">
-                Creative digital experiences for artists, labels, and music-focused businesses.
+                Innovative digital experiences that connect artists, audiences, and communities.
               </p>
             </div>
           </div>
@@ -83,7 +86,7 @@ export default function Home() {
           <div className="flex flex-col items-center text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold tracking-tighter mb-4">Featured Work</h2>
             <p className="text-xl text-muted-foreground max-w-[700px]">
-              A selection of our recent projects for mission-driven organizations
+              A curated selection of projects demonstrating our commitment to impactful digital solutions.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -115,22 +118,22 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Approach Section */}
+      {/* About Section */}
       <section className="py-20 bg-white dark:bg-black">
         <div className="container px-4 md:px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold tracking-tighter mb-4">Our Approach</h2>
               <p className="text-lg text-muted-foreground mb-6">
-                We believe in creating digital experiences that are not only beautiful but also sustainable, accessible,
-                and impactful.
+                We're committed to crafting digital experiences that are beautiful, sustainable, accessible, and drive
+                meaningful impact.
               </p>
               <ul className="space-y-4">
                 {[
-                  "Sustainable web design",
-                  "Accessibility-first approach",
-                  "Impact-focused strategy",
-                  "Collaborative process",
+                  "Sustainable Design & Development",
+                  "Inclusive Accessibility Practices",
+                  "Data-Driven Impact Strategies",
+                  "Collaborative Partnership Approach",
                 ].map((item, i) => (
                   <li key={i} className="flex items-start">
                     <div className="mr-4 h-6 w-6 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center">
@@ -146,7 +149,7 @@ export default function Home() {
               <div className="aspect-square w-full overflow-hidden rounded-lg bg-muted">
                 <Image
                   src="/placeholder.svg?height=600&width=600"
-                  alt="Our team at work"
+                  alt="About Hyphora Solutions"
                   width={600}
                   height={600}
                   className="object-cover"
@@ -159,15 +162,78 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials */}
+      {/* Blog Section */}
       <section className="py-20 bg-green-50 dark:bg-green-950/20">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tighter mb-4">What Our Clients Say</h2>
-            <p className="text-xl text-muted-foreground max-w-[700px]">Hear from the organizations we've helped</p>
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tighter mb-4">Insights & Inspiration</h2>
+            <p className="text-xl text-muted-foreground max-w-[700px]">
+              Stay up-to-date on the latest trends and best practices in impact-driven marketing.
+            </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white dark:bg-green-950/40 p-8 rounded-lg shadow-sm">
+              <h3 className="text-xl font-bold mb-3">The Power of Purpose-Driven Marketing</h3>
+              <p className="text-muted-foreground mb-6">
+                In today's crowded digital landscape, purpose-driven organizations have a unique advantage: authentic
+                stories that resonate deeply with audiences seeking meaning and impact...
+              </p>
+              <div className="flex items-center">
+                <div className="h-12 w-12 rounded-full bg-muted mr-4">
+                  <Image
+                    src="/placeholder.svg?height=48&width=48"
+                    alt="Author"
+                    width={48}
+                    height={48}
+                    className="rounded-full"
+                  />
+                </div>
+                <div>
+                  <h4 className="font-bold">Emma Johnson</h4>
+                  <p className="text-sm text-muted-foreground">Marketing Strategist</p>
+                </div>
+              </div>
+            </div>
+            <div className="bg-white dark:bg-green-950/40 p-8 rounded-lg shadow-sm">
+              <h3 className="text-xl font-bold mb-3">Building Community Through Digital Engagement</h3>
+              <p className="text-muted-foreground mb-6">
+                For impact-driven organizations, community isn't just a nice-to-have—it's essential. Learn how to
+                leverage digital tools to build and nurture a community that amplifies your mission...
+              </p>
+              <div className="flex items-center">
+                <div className="h-12 w-12 rounded-full bg-muted mr-4">
+                  <Image
+                    src="/placeholder.svg?height=48&width=48"
+                    alt="Author"
+                    width={48}
+                    height={48}
+                    className="rounded-full"
+                  />
+                </div>
+                <div>
+                  <h4 className="font-bold">Marcus Rivera</h4>
+                  <p className="text-sm text-muted-foreground">Community Engagement Specialist</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex justify-center mt-12">
+            <Button size="lg" variant="outline">
+              Read our blog <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="py-20 bg-white dark:bg-black">
+        <div className="container px-4 md:px-6">
+          <div className="flex flex-col items-center text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tighter mb-4">Client Success Stories</h2>
+            <p className="text-xl text-muted-foreground max-w-[700px]">Hear from the organizations we've helped</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-green-50 dark:bg-green-950/40 p-8 rounded-lg shadow-sm">
               <p className="italic text-muted-foreground mb-6">
                 "Hyphora transformed our digital presence. Their understanding of our environmental mission was evident
                 in every design choice and feature they implemented."
@@ -188,7 +254,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="bg-white dark:bg-green-950/40 p-8 rounded-lg shadow-sm">
+            <div className="bg-green-50 dark:bg-green-950/40 p-8 rounded-lg shadow-sm">
               <p className="italic text-muted-foreground mb-6">
                 "Working with Hyphora was a collaborative and inspiring experience. They created a website that
                 perfectly captures our music collective's ethos and has significantly increased our audience
@@ -218,12 +284,12 @@ export default function Home() {
       <section className="py-20 bg-green-600 dark:bg-green-800 text-white">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center text-center">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tighter mb-4">Ready to make an impact?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tighter mb-4">Ready to Amplify Your Impact?</h2>
             <p className="text-xl text-white/80 max-w-[700px] mb-8">
-              Let's create a digital experience that amplifies your mission and connects with your audience.
+              Partner with us to build a digital presence that drives meaningful change and fosters lasting connections.
             </p>
             <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-green-600">
-              Get in Touch
+              Start Your Project
             </Button>
           </div>
         </div>
